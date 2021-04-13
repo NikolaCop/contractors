@@ -30,9 +30,9 @@ namespace contractors.Repositories
         {
             string sql = @"
       INSERT INTO contractorss
-      (make, model, year)
+      (name)
       VALUES
-      (@Make, @Model, @Year);
+      (@Name);
       SELECT LAST_INSERT_ID();";
             int id = _db.ExecuteScalar<int>(sql, newContractor);
             newContractor.id = id;
@@ -44,9 +44,7 @@ namespace contractors.Repositories
             string sql = @"
       UPDATE contractorss
       SET
-          make = @Make,
-          model = @Model,
-          year = @Year
+          name = @Name
           WHERE id = @Id;
           SELECT * FROM contractorss WHERE id = @Id;";
             return _db.QueryFirstOrDefault<Contractor>(sql, contractorsToEdit);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OrrHUUkdPlMGnHV7ZgwrRNH5APqjR7y8ujCKBMDsj/PnjcqXaSPWa91Ohyz9o2U8mL/+wVzMvaekAdkWq8au0g==",
+  "dgSpecHash": "h7NVi0hVqBrW4BkpBYO0zVfoHhStE1bx/EGbtHcg27trvaXjU1p6Rm/vB8sYRFqxH4JzhJN+s2MPTeAu5TQdfQ==",
   "success": true,
-  "projectFilePath": "c:\\source\\codeworks\\c#\\contractors\\contractors.csproj",
+  "projectFilePath": "C:\\source\\codeworks\\c#\\contractors\\contractors.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikol\\.nuget\\packages\\codeworks.auth0provider\\1.0.3\\codeworks.auth0provider.1.0.3.nupkg.sha512",
     "C:\\Users\\Nikol\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",

@@ -954,11 +954,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\source\\codeworks\\c#\\contractors\\contractors.csproj",
+      "projectUniqueName": "C:\\source\\codeworks\\c#\\contractors\\contractors.csproj",
       "projectName": "contractors",
-      "projectPath": "c:\\source\\codeworks\\c#\\contractors\\contractors.csproj",
+      "projectPath": "C:\\source\\codeworks\\c#\\contractors\\contractors.csproj",
       "packagesPath": "C:\\Users\\Nikol\\.nuget\\packages\\",
-      "outputPath": "c:\\source\\codeworks\\c#\\contractors\\obj\\",
+      "outputPath": "C:\\source\\codeworks\\c#\\contractors\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nikol\\AppData\\Roaming\\NuGet\\NuGet.Config"

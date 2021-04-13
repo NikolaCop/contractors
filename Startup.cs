@@ -36,16 +36,16 @@ namespace contractors
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "contractors", Version = "v1" });
             });
             services.AddScoped<IDbConnection>(x => CreateDbConnection());
-
+            //PROFILES
             services.AddTransient<ProfilesService>();
             services.AddTransient<ProfilesRepository>();
-
+            //CONTRACTORS
             services.AddTransient<ContractorsService>();
             services.AddTransient<ContractorsRepository>();
-
+            //JOBS
             services.AddTransient<JobsService>();
             services.AddTransient<JobsRepository>();
-
+            //BOTH
             services.AddTransient<ContractorsJobsService>();
             services.AddTransient<ContractorsJobsRepository>();
         }
