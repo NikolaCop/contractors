@@ -14,7 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-
+using MySqlConnector;
 namespace contractors
 {
     public class Startup
@@ -39,10 +39,13 @@ namespace contractors
 
             services.AddTransient<ProfilesService>();
             services.AddTransient<ProfilesRepository>();
+
             services.AddTransient<ContractorsService>();
             services.AddTransient<ContractorsRepository>();
+
             services.AddTransient<JobsService>();
             services.AddTransient<JobsRepository>();
+
             services.AddTransient<ContractorsJobsService>();
             services.AddTransient<ContractorsJobsRepository>();
         }
