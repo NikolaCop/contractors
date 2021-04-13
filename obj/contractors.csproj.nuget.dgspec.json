@@ -38,6 +38,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "CodeWorks.Auth0Provider": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.0.78, )"
