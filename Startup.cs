@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using contractors.Repositories;
+using contractors.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +35,22 @@ namespace contractors
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "contractors", Version = "v1" });
             });
+            services.AddScoped<IDbConnection>(x => CreateDbConnection());
+
+            services.AddTransient<ProfilesService>();
+            services.AddTransient<ProfilesRepository>();
+            services.AddTransient<ContractorsService>();
+            services.AddTransient<ContractorsRepository>();
+            services.AddTransient<JobsService>();
+            services.AddTransient<JobsRepository>();
+            services.AddTransient<ContractorsJobsService>();
+            services.AddTransient<ContractorsJobsRepository>();
+        }
+
+        private IDbConnection CreateDbConnection()
+        {
+            var connectionString = Configuration["db:gearhost"];
+            return new MySqlConnection(connectionString);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,6 +73,8 @@ namespace contractors
             {
                 endpoints.MapControllers();
             });
+
         }
+
     }
 }

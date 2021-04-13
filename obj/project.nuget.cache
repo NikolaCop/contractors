@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tK/ndf1cUMprxroiPjDSYoYHEdNispBDv9dmYyZvW+UJA7e44WpNGhNt0IUnQxAddXxt2RaBLt79kHSr4pH7UQ==",
+  "dgSpecHash": "77N/kxjudXu58ZqJrIfGD2X6NXUlvVUFNRoZFgcqjA+Og0dNoKnMLM6w92MSt9Y+0YBE6tJaF8U+R6pxWGdQvA==",
   "success": true,
   "projectFilePath": "c:\\source\\codeworks\\c#\\contractors\\contractors.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\Nikol\\.nuget\\packages\\microsoft.extensions.options\\3.1.9\\microsoft.extensions.options.3.1.9.nupkg.sha512",
     "C:\\Users\\Nikol\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
     "C:\\Users\\Nikol\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Nikol\\.nuget\\packages\\mysqlconnection\\1.0.1\\mysqlconnection.1.0.1.nupkg.sha512",
     "C:\\Users\\Nikol\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Nikol\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\Nikol\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
@@ -23,5 +24,16 @@
     "C:\\Users\\Nikol\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
     "C:\\Users\\Nikol\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MySQLConnection 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "MySQLConnection",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }
